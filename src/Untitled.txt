@@ -1,0 +1,29 @@
+addCartItem = foodItem => {
+    const {cartList} = this.state
+    const checkItem = cartList.find(
+      eachFoodItem => eachFoodItem.restrauntId === foodItem.restrauntId,
+    )
+    if (checkItem === undefined) {
+      cartList.push(foodItem)
+      localStorage.setItem('cartData', JSON.stringify(cartList))
+      const stringifiedCartList = localStorage.getItem('cartData')
+      const parsedCartList = JSON.parse(stringifiedCartList)
+      if (parsedCartList === null) {
+        this.setState({cartList: []})
+      } else {
+        this.setState({cartList: parsedCartList})
+      }
+    } else {
+      this.setState(prevState => ({
+        cartList: prevState.cartList.map(eachFoodItem => {
+          if (eachFoodItem.restrauntId === foodItem.restrauntId) {
+            return {
+              ...eachFoodItem,
+              quantity: eachFoodItem.quantity + foodItem.quantity,
+            }
+          }
+          return eachFoodItem
+        }),
+      }))
+    }
+  }

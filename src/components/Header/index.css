@@ -1,0 +1,113 @@
+.desk-top-header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+.desk-top-logo {
+  background-color: transparent;
+  border: none;
+}
+.mobile-header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+@media screen and (min-width: 767px) {
+  .mobile-header-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .desk-top-header-container {
+    display: none;
+  }
+}
+.nav-item {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: #334155;
+  margin-right: 50px;
+}
+.header-heading {
+  font-size: 20px;
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 700;
+  color: #f7931e;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.header-image-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.navigation-container {
+  display: flex;
+  align-items: center;
+}
+.un-order-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.logout-button {
+  width: 90px;
+  height: 30px;
+  margin-top: 10px;
+  background-color: #f7931e;
+  color: #ffffff;
+  border: none;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.menu {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+}
+.menu-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.close-button {
+  border: none;
+  background-color: transparent;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+@media screen and (max-width: 767px) {
+  .header-heading {
+    font-size: 15px;
+  }
+  .header-logo {
+    width: 30px;
+    height: 30px;
+  }
+  .logout-button {
+    width: 70px;
+  }
+  .nav-item {
+    margin-right: 30px;
+  }
+}

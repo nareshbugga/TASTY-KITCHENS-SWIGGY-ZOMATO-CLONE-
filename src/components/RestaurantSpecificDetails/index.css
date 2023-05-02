@@ -1,0 +1,112 @@
+.details-main-container {
+  padding: 15px;
+}
+.specific-details-container {
+  background-image: url('https://res.cloudinary.com/dqrp5aeqy/image/upload/v1681379584/Item_Details_Bg_ss9alc.svg');
+  background-size: cover;
+  width: 95%;
+  height: 300px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .specific-details-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+}
+.specific-details-image {
+  width: 210px;
+  height: 210px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 767px) {
+  .specific-details-image {
+    width: 200px;
+    height: 130px;
+  }
+}
+.details-container {
+  margin-left: 30px;
+}
+.specific-detail-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  color: #ffffff;
+}
+.cuisine {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+}
+.location {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
+.price-rating-container {
+  display: flex;
+}
+.line {
+  height: 60px;
+}
+.specific-rating-container {
+  margin-right: 50px;
+  line-height: 0.5;
+}
+.price-container {
+  margin-left: 50px;
+  line-height: 0.5;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+.rate {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.ratings {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #e2e8f0;
+}
+.rupee {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.cost {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #e2e8f0;
+}
+.details-un-order-list {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}

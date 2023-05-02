@@ -1,0 +1,35 @@
+.not-found-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.not-found-heading {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: #1e293b;
+}
+.not-found-description {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #475569;
+}
+.home-page-button {
+  cursor: pointer;
+  color: #ffffff;
+  font-family: 'DM Sans';
+  font-weight: 500;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f7931e;
+}

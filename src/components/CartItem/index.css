@@ -1,0 +1,97 @@
+.cart-item-image {
+  width: 150px;
+  height: 130px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 767px) {
+  .cart-item-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+.cart-item-heading {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #183b56;
+  margin-left: 15px;
+}
+@media screen and (max-width: 767px) {
+  .cart-item-heading {
+    margin-left: 15px;
+    font-size: 16px;
+  }
+}
+.cart-item-image-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.desk-top-cart-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 50px;
+  background-color: transparent;
+  margin-top: 20px;
+}
+.mobile-cart-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 50px;
+  margin-top: 20px;
+}
+.mobile-cart-container {
+  margin-left: 10px;
+  line-height: 1;
+}
+@media screen and (max-width: 767px) {
+  .desk-top-cart-item-container {
+    display: none;
+  }
+}
+@media screen and (min-width: 767px) {
+  .mobile-cart-item-container {
+    display: none;
+  }
+}
+.cart-item-rupee-container {
+  display: flex;
+  align-items: center;
+}
+.cart-item-cost {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffa412;
+  margin-left: 8px;
+}
+.rupee-icon {
+  width: 20px;
+  height: 20px;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .rupee-icon {
+    margin-left: 15px;
+  }
+}
+.remove-card-item {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.remove-icon {
+  width: 20px;
+  height: 20px;
+  color: #ffa412;
+  opacity: 0.6;
+}
+@media screen and (max-width: 767px) {
+  .remove-icon {
+    margin-left: 30px;
+  }
+}

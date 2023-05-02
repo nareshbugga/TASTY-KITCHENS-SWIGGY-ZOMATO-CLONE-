@@ -1,0 +1,39 @@
+.footer-container {
+  background-color: #0f172a;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-image-container {
+  display: flex;
+  align-items: center;
+}
+.footer-heading {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 25px;
+  color: #ffffff;
+  margin-left: 15px;
+}
+.footer-description {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+}
+.icons-style {
+  width: 35px;
+  height: 35px;
+  color: #ffffff;
+  margin: 0px 20px;
+}
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  border-color: #0f172a;
+}

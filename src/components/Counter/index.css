@@ -1,0 +1,22 @@
+.button-container {
+  display: flex;
+  align-items: center;
+}
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.button-icon {
+  width: 21px;
+  height: 21px;
+  margin-top: 5px;
+  margin: 0px 15px;
+}
+.quantity {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #475569;
+}

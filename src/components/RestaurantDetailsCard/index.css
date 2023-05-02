@@ -1,0 +1,58 @@
+.details-card {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.card-image {
+  width: 170px;
+  height: 180px;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+.card-heading {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  color: #334155;
+  line-height: 1.5;
+}
+.card-container {
+  display: flex;
+  align-items: center;
+}
+.sub-container {
+  line-height: 0.5;
+}
+.rupees {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #334155;
+  margin-left: 5px;
+}
+.star-rate {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #0a1f44;
+  margin-left: 5px;
+}
+.add-button {
+  width: 50px;
+  height: 30px;
+  color: #ffa412;
+  border: 2px solid #ffa412;
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: transparent;
+  margin-top: 10px;
+  cursor: pointer;
+}
