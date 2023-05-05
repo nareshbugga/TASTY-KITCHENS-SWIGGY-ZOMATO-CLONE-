@@ -29,6 +29,11 @@ class Header extends Component {
 
   render() {
     const {showMenu} = this.state
+    const {location} = this.props
+    const isHomeActive =
+      location.pathname === '/' ? 'active-link' : 'non-active-link'
+    const isCartActive =
+      location.pathname === '/cart' ? 'active-link' : 'non-active-link'
     return (
       <>
         <div className="desk-top-header-container">
@@ -48,10 +53,10 @@ class Header extends Component {
           <div className="navigation-container">
             <ul className="un-order-list">
               <Link to="/" className="nav-link">
-                <li className="nav-item">Home</li>
+                <li className={`nav-item ${isHomeActive}`}>Home</li>
               </Link>
               <Link to="/cart" className="nav-link">
-                <li className="nav-item">Cart</li>
+                <li className={`nav-item ${isCartActive}`}>Cart</li>
               </Link>
             </ul>
             <button

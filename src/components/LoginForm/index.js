@@ -63,13 +63,18 @@ class LoginForm extends Component {
             <div className="form-container">
               <div className="logo-container">
                 <img
+                  alt="landing"
+                  src="https://res.cloudinary.com/dqrp5aeqy/image/upload/v1681459354/Mobile_erwxga.svg"
+                  className="mobile-image"
+                />
+                <img
                   src="https://res.cloudinary.com/dqrp5aeqy/image/upload/v1681378031/VectorKitchenHat_iuxzjd.svg"
                   alt="website logo"
                   className="kitchen-hat"
                 />
                 <h1 className="login-heading">Tasty Kitchens</h1>
               </div>
-              <p className="login">Login</p>
+              <h1 className="login">Login</h1>
               <form className="submit-form" onSubmit={this.onSubmitForm}>
                 <div className="label-container">
                   <label htmlFor="UserName" className="label-heading">
@@ -114,52 +119,6 @@ class LoginForm extends Component {
                 className="desk-top-image"
               />
             </div>
-          </div>
-        </div>
-        <div className="mobile-main-container">
-          <div className="mobile-container">
-            <img
-              alt="website login"
-              src="https://res.cloudinary.com/dqrp5aeqy/image/upload/v1681459354/Mobile_erwxga.svg"
-              className="mobile-image"
-            />
-            <h1 className="login">Login</h1>
-            <form className="submit-form" onSubmit={this.onSubmitForm}>
-              <div className="label-container">
-                <label htmlFor="UserName" className="label-heading">
-                  USERNAME
-                </label>
-                <br />
-                <input
-                  type="text"
-                  id="UserName"
-                  className="input-field"
-                  value={username}
-                  onChange={this.onChangeUsername}
-                />
-              </div>
-              <div className="label-container">
-                <label htmlFor="PassWord" className="label-heading">
-                  PASSWORD
-                </label>
-                <br />
-                <input
-                  type="password"
-                  id="PassWord"
-                  className="input-field"
-                  value={password}
-                  onChange={this.onChangePassword}
-                />
-              </div>
-              {errorMsg.length === 0 ? null : (
-                <p className="error-msg">{errorMsg}</p>
-              )}
-              <div>
-                <button type="submit" className="login-button">
-                  Login
-                </button>
-              </div>
-            </form>
           </div>
         </div>
       </>

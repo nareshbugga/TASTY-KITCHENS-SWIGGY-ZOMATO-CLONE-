@@ -22,7 +22,7 @@ const CartPriceSummary = props => {
           <div className="summary-container">
             <h1 className="summary-heading">Order Total:</h1>
             <div>
-              <p className="price-summary" testid="total-price">
+              <p testid="total-price" className="price-summary">
                 <BiRupee className="summary-rupee" />
                 {totalPrice}
               </p>

@@ -111,3 +111,15 @@
     margin-right: 30px;
   }
 }
+.active-link {
+  background-color: #f7931e;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.non-active-link {
+  background-color: #ffffff;
+}
