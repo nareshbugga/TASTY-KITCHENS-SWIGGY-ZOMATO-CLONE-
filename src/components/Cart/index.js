@@ -65,7 +65,7 @@ class Cart extends Component {
                     </div>
                   </li>
                   {cartList.map(eachFood => (
-                    <CartItem eachFood={eachFood} key={eachFood.restrauntId} />
+                    <CartItem eachFood={eachFood} key={eachFood.id} />
                   ))}
                 </ul>
                 <hr className="hr-cart" />

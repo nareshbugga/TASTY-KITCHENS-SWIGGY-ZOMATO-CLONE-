@@ -47,7 +47,7 @@ class RestaurantSpecificDetails extends Component {
 
       const {foodItems} = updateData
       const updateFoodItems = foodItems.map(eachItem => ({
-        restrauntId: eachItem.id,
+        id: eachItem.id,
         imageUrl: eachItem.image_url,
         rating: eachItem.rating,
         name: eachItem.name,
@@ -87,7 +87,7 @@ class RestaurantSpecificDetails extends Component {
             <div>
               <img
                 src={imageUrl}
-                alt="restaurant"
+                alt="restaurant_card"
                 className="specific-details-image"
               />
             </div>
@@ -119,10 +119,7 @@ class RestaurantSpecificDetails extends Component {
         </div>
         <ul className="details-un-order-list">
           {foodItemsList.map(eachItem => (
-            <RestaurantDetailsCard
-              eachItem={eachItem}
-              key={eachItem.restrauntId}
-            />
+            <RestaurantDetailsCard eachItem={eachItem} key={eachItem.id} />
           ))}
         </ul>
         <Footer />

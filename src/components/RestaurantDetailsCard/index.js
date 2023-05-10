@@ -13,7 +13,7 @@ class RestaurantDetailsCard extends Component {
     let {quantity} = this.state
     const {showAddQuantity} = this.state
     const {eachItem} = this.props
-    const {restrauntId, imageUrl, rating, name, cost} = eachItem
+    const {id, imageUrl, rating, name, cost} = eachItem
 
     return (
       <ReactContext.Consumer>
@@ -25,20 +25,18 @@ class RestaurantDetailsCard extends Component {
             decrementCartItemQuantity,
           } = value
 
-          const cartItem = cartList.find(
-            item => item.restrauntId === restrauntId,
-          )
+          const cartItem = cartList.find(item => item.id === id)
           quantity = cartItem ? cartItem.quantity : 1
 
           const onIncrement = () => {
             this.setState(prevState => ({quantity: prevState.quantity + 1}))
-            incrementCartItemQuantity(restrauntId)
+            incrementCartItemQuantity(id)
           }
 
           const onDecrement = () => {
             if (quantity > 1) {
               this.setState(prevState => ({quantity: prevState.quantity - 1}))
-              decrementCartItemQuantity(restrauntId)
+              decrementCartItemQuantity(id)
             } else {
               this.setState({showAddQuantity: false})
             }

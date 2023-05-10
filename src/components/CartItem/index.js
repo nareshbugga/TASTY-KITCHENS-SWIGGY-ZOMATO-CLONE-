@@ -12,7 +12,7 @@ import './index.css'
 
 const CartItem = props => {
   const {eachFood} = props
-  const {restrauntId, cost, imageUrl, name, quantity} = eachFood
+  const {id, cost, imageUrl, name, quantity} = eachFood
 
   return (
     <ReactContext.Consumer>
@@ -24,15 +24,15 @@ const CartItem = props => {
         } = value
 
         const onIncrement = () => {
-          incrementCartItemQuantity(restrauntId)
+          incrementCartItemQuantity(id)
         }
 
         const onDecrement = () => {
-          decrementCartItemQuantity(restrauntId)
+          decrementCartItemQuantity(id)
         }
 
         const removeCartItemInCart = () => {
-          removeCartItem(restrauntId)
+          removeCartItem(id)
         }
 
         return (

@@ -21,10 +21,10 @@ const getCartListFromLocalStorage = () => {
 class App extends Component {
   state = {cartList: getCartListFromLocalStorage()}
 
-  incrementCartItemQuantity = restrauntId => {
+  incrementCartItemQuantity = id => {
     this.setState(prevState => ({
       cartList: prevState.cartList.map(eachItem => {
-        if (eachItem.restrauntId === restrauntId) {
+        if (eachItem.id === id) {
           const updateQuantity = eachItem.quantity + 1
           return {...eachItem, quantity: updateQuantity}
         }
@@ -33,17 +33,15 @@ class App extends Component {
     }))
   }
 
-  decrementCartItemQuantity = restrauntId => {
+  decrementCartItemQuantity = id => {
     const {cartList} = this.state
-    const checkItem = cartList.find(
-      eachItem => eachItem.restrauntId === restrauntId,
-    )
+    const checkItem = cartList.find(eachItem => eachItem.id === id)
 
     const {quantity} = checkItem
     if (quantity > 1) {
       this.setState(prevState => ({
         cartList: prevState.cartList.map(eachItem => {
-          if (eachItem.restrauntId === restrauntId) {
+          if (eachItem.id === id) {
             const updateQuantity = eachItem.quantity - 1
             return {...eachItem, quantity: updateQuantity}
           }
@@ -59,7 +57,7 @@ class App extends Component {
   addCartItem = foodItem => {
     const {cartList} = this.state
     const checkItem = cartList.find(
-      eachFoodItem => eachFoodItem.restrauntId === foodItem.restrauntId,
+      eachFoodItem => eachFoodItem.id === foodItem.id,
     )
     if (checkItem === undefined) {
       cartList.push(foodItem)
@@ -74,11 +72,9 @@ class App extends Component {
     }
   }
 
-  removeCartItem = restrauntId => {
+  removeCartItem = id => {
     const {cartList} = this.state
-    const filterItems = cartList.filter(
-      eachItem => eachItem.restrauntId !== restrauntId,
-    )
+    const filterItems = cartList.filter(eachItem => eachItem.id !== id)
     console.log(filterItems)
     this.setState({cartList: filterItems})
     localStorage.setItem('cartData', JSON.stringify(filterItems))
