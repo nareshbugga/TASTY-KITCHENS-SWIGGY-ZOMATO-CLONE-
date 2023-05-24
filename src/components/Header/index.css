@@ -36,7 +36,7 @@
   margin-right: 50px;
 }
 .header-heading {
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'DM Sans';
   font-style: italic;
   font-weight: 700;
@@ -98,11 +98,11 @@
 }
 @media screen and (max-width: 767px) {
   .header-heading {
-    font-size: 15px;
+    font-size: 20px;
   }
   .header-logo {
-    width: 30px;
-    height: 30px;
+    width: 38px;
+    height: 38px;
   }
   .logout-button {
     width: 70px;

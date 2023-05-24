@@ -82,6 +82,7 @@ class LoginForm extends Component {
                   </label>
                   <br />
                   <input
+                    placeholder="rahul"
                     type="text"
                     id="UserName"
                     className="input-field"
@@ -95,6 +96,7 @@ class LoginForm extends Component {
                   </label>
                   <br />
                   <input
+                    placeholder="rahul@2021"
                     type="password"
                     id="PassWord"
                     className="input-field"
